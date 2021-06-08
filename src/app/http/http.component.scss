@@ -1,0 +1,91 @@
+// VARIABLES
+$primarycolor:rgb(255, 0, 85);
+$black:black;
+$background:linear-gradient(25deg,rgb(183, 0, 255),rgb(255, 0, 85));
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    background:black;
+    color: $black;
+}
+.box{
+    width: 1400px;
+    height: 730px;
+    background: $background;
+    margin: 10px auto;
+}
+.subbox{
+    width: 1398px;
+    height: 728px;
+    background:black;
+   position: absolute;
+   margin-left: 1px;
+   margin-top: 1px;
+   @include flex;
+}
+.sidenav{
+    height: 728px;
+    width: 25%;
+    background: $background;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 1048px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f25b;}
+  #customers tr:nth-child(odd){background-color: #f2f2f23a;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:rgb(230, 26, 87);
+    color: white;
+  }
+
+  .snavbox{
+    margin-left: 20px;
+    margin-top: 60px;
+    color: rgb(4, 17, 92);
+}
+  .form-control{
+    width: 240px;
+}
+.snavbut{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right,rgb(29, 238, 133),rgb(0, 204, 255));
+}
+.copyright{
+    height: 75px;
+    width: 1048px;
+    margin-left: 350px;
+    background: rgb(0, 0, 0);
+    margin-top: 486px;
+    color: rgb(255, 15, 87);
+    
+    text-align: center;
+    
+}
+.ctext{
+    font-size: 45px;
+    font-family: 'Comfortaa', cursive;
+    color:$primarycolor ;
+    width: 700px;
+    height: 100px;
+    margin-top: 60px;
+    margin-left: 250px;
+}
