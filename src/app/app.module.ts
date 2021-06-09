@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule} from '@angular/forms';
 import { Routes,RouterModule} from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http';
@@ -21,7 +22,8 @@ const routes:Routes=[{path:'',redirectTo:'home',pathMatch:'full'},
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

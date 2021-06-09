@@ -13,7 +13,11 @@ export class HttpService {
   listoff(){
     let url="https://jsonplaceholder.typicode.com/users";
   return this.httpclient.get(url);
-  
-
 }
+photolist(){
+  let photourl="https://jsonplaceholder.typicode.com/photos";
+  return this.httpclient.get(photourl);
+}
+
+
 }

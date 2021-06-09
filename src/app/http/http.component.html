@@ -6,16 +6,20 @@
     <div class="subbox">
                          <div class="sidenav">
                             <div class="snavbox">
-                                <h1>Welcome back!<h4>Access user details</h4> </h1> 
-                              <button class="snavbut" (click)="listpr()"> List</button>
+                                <h1>Welcome back!<h4>Access user details</h4></h1> 
+                              <button class="snavbut" (click)="listpr()" (click)="listp()">GET</button>
                                </div>
+                               <div class="message"><h2>Message<h6>Post method by Http module</h6></h2><span style="color: rgb(6, 132, 236);">{{json}} </span></div>
                                <div class="copyright">
                                    &copy; All rights are reserved<br>
                                    Krish__official
                                </div>
                          </div>
                          <div class="content">
-                             <div class="ctext">HTTP - <span style="color: rgb(6, 132, 236);">API </span>INT<span style="color: rgb(167, 236, 6);">EGRA</span> <span style="color: rgb(6, 201, 236);">TION</span></div>
+                             <div class="ctext"> HTTP - <span style="color: rgb(6, 132, 236); width: 300px;">API </span>INT<span style="color: rgb(167, 236, 6);">EGRA</span> <span style="color: rgb(6, 201, 236);">TION</span></div>
+                             <input class="form-control" type="text" [(ngModel)]="name" placeholder="Enter text to update Message ">  <button class="snavbut" (click)="postname()">POST</button>
+                             <br> <br>
+                           
                                      <table id="customers">
                                          <tr>
                                              <th>ID</th>
@@ -24,15 +28,13 @@
                                              <th>EMAIL</th>
                                              <th>ADDRESS</th>
                                          </tr>
-                                         <tr *ngFor="let i of user">
+                                         <tr *ngFor="let i of user" >
                                           <td>{{i.id}}</td>
                                           <td>{{i.name}}</td>
                                           <td>{{i.username}}</td>
                                           <td>{{i.email}}</td>
                                           <td>{{i.address.city}}</td>
-                                        </tr>
-
-
+                                         </tr>
                                     </table>
                          </div>
     </div>
